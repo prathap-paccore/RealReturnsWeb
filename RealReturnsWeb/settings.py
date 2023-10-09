@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.get("DEBUG", 0)))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["16.171.245.132"]
 
 ALLOWED_HOSTS.extend(
     filter(
