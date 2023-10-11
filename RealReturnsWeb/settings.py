@@ -103,14 +103,13 @@ WSGI_APPLICATION = "RealReturnsWeb.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": os.environ.get("DB_NAME"),
-        "USER": os.environ.get("DB_USER"),
-        "PASSWORD": os.environ.get("DB_PASSWORD"),
+        "NAME": os.environ.get("DB_NAME","roi),
+        "USER": os.environ.get("DB_USER","root"),
+        "PASSWORD": os.environ.get("DB_PASSWORD","prathappaccore"),
         "HOST": "localhost",
         "PORT": "3306",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
