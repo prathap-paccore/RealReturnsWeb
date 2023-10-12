@@ -103,7 +103,7 @@ WSGI_APPLICATION = "RealReturnsWeb.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": os.environ.get("DB_NAME","roi),
+        "NAME": os.environ.get("DB_NAME","roi"),
         "USER": os.environ.get("DB_USER","root"),
         "PASSWORD": os.environ.get("DB_PASSWORD","prathappaccore"),
         "HOST": "localhost",
